@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 // import App from "./App.jsx"
-import "./CvApp.css"
+import "./styles/CvApp.css"
 // import TodoApp from "./todoApp.jsx"
 import { CvApp } from "./CvApp.jsx"
 

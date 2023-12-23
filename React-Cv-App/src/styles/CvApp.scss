@@ -1,0 +1,120 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+.app {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+
+form {
+  border-radius: 20px;
+  background-color: $mainColor;
+  display: flex;
+  grid-column: 1 / 2;
+  flex-direction: column;
+  padding: 30px;
+  font-family: $titleFont;
+}
+
+.virtualCv {
+  font-family: $cvFont;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: 30px;
+  box-shadow: 3px 5px 15px;
+  margin: 20px;
+}
+
+.mainInfo {
+  grid-column: 1 / 2;
+  padding: 20px;
+}
+.header {
+  border: 3px solid white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.basicInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.experienceForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10 px;
+
+  textarea {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+  .virtualCv {
+    width: 100vw;
+    padding: 10px;
+    overflow: auto;
+  }
+}
+
+// .basicInfo {
+//   display: flex;
+//   flex-direction: column;
+// }
+// .contactInfoForm {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .skillsForm {
+//   display: flex;
+//   flex-direction: column;
+// }
